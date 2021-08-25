@@ -13,7 +13,7 @@ public class Menus {
 		int i = scan.nextInt();
 		
 		if (i == 1) {
-			Print.allAddressBooks(AddressBook.allAddressBooks());
+			Print.allAddressBooks(AddressBook.addressBooksList);
 		mainMenu();
 		}
 		
@@ -29,7 +29,7 @@ public class Menus {
 		
 		if (i == 3) {
 			System.out.println("Which address book do you want to edit?");
-			Print.addressBooksTitles(AddressBook.allAddressBooks());
+			Print.addressBooksTitles(AddressBook.addressBooksList);
 		}
 	}
 	
@@ -43,7 +43,7 @@ public class Menus {
 			addressBookMenu(addressBook);
 		}
 		if (i == 2) {
-			addressBook.addContact();
+			addressBook.addContact(null);
 			addressBookMenu(addressBook);
 		}
 		

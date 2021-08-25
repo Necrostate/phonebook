@@ -1,11 +1,15 @@
 package phonebook;
 
-public class Person {
+public class Contact {
 	
 	private String firstName;
 	private String lastName;
 	private String phoneNumber;
 	
+	public Contact(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}

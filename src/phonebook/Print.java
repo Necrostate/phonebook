@@ -11,12 +11,12 @@ public class Print {
 		}
 	}
 
-	public static void contact(Person person) {
-		System.out.println(person.getFirstName() + " " + person.getLastName() + ":" + person.getPhoneNumber());
+	public static void contact(Contact contact) {
+		System.out.println(contact.getFirstName() + " " + contact.getLastName() + ":" + contact.getPhoneNumber());
 	}
 
-	public static void allAddressBooks(ArrayList<AddressBook> addressBooks) {
-		for (AddressBook addressBook : addressBooks) {
+	public static void allAddressBooks(ArrayList<AddressBook> allAddressBooks) {
+		for (AddressBook addressBook : allAddressBooks) {
 
 			System.out.println(addressBook.getName() + ":\n");
 			Print.addressBook(addressBook);
@@ -26,8 +26,8 @@ public class Print {
 
 	}
 
-	public static void addressBooksTitles(ArrayList<AddressBook> addressBooks) {
-		for (AddressBook addressBook : addressBooks) {
+	public static void addressBooksTitles(ArrayList<AddressBook> allAddressBooks) {
+		for (AddressBook addressBook : allAddressBooks) {
 
 			System.out.println(addressBook.getName() + ":\n");
 
